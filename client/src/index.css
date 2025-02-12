@@ -1,0 +1,22 @@
+@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+input[type = 'text'],input[type = 'password'],input[type = 'email'], input[type = 'number'], textarea{
+    @apply w-full border my-1 py-2 px-3 rounded-2xl;
+}
+
+button{
+    @apply bg-gray-300;
+}
+
+button.primary{
+    background-color: #f5385d;
+    @apply p-2 w-full text-white rounded-2xl;
+}
+
+button.photoBtn{
+    background-color: transparent;
+    @apply flex items-center justify-center gap-1 h-20 rounded-2xl border text-xl text-gray-600;
+}
